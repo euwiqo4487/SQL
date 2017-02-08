@@ -1,0 +1,26 @@
+//public string Insert(int startIndex, string value);
+// 摘要: 
+//     傳回新字串，其中已在這個執行個體中指定的索引位置插入指定的字串。
+//
+// 參數: 
+//   startIndex:
+//     插入的索引位置 (以零起始)。
+//
+//   value:
+//     要插入的字串。
+//
+// 傳回: 
+//     與這個執行個體相等的新字串，但是在 startIndex 位置插入了 value。
+//
+// 例外狀況: 
+//   System.ArgumentNullException:
+//     value 為 null。
+//
+//   System.ArgumentOutOfRangeException:
+//     startIndex 為負值或大於這個執行個體的長度。
+----------------------------------------------------------------------------------------------------------
+//textBox1=>can be［TextBox］or［TextEdit］
+//textBox1.SelectionStart: Gets or sets a character index at which the selection starts. 取得字元的index
+
+
+textBox1.Text = textBox1.Text.Insert(textBox1.SelectionStart, "X");
