@@ -1,22 +1,23 @@
-﻿insert into IOMergeLog select 1829,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,1,'ID','L122797897', getdate()
-insert into IOMergeLog select 1830,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,2,'Flag','', getdate()
-insert into IOMergeLog select 1831,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,3,'IsFhips1','1', getdate()
-insert into IOMergeLog select 1832,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,4,'IsFhips2','1', getdate()
-insert into IOMergeLog select 1833,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,5,'IsFhips3','1', getdate()
-insert into IOMergeLog select 1834,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,6,'IsFhips4','1', getdate()
-insert into IOMergeLog select 1835,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,7,'IsFhips5','1', getdate()
-insert into IOMergeLog select 1836,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,8,'IsFhips6','1', getdate()
-insert into IOMergeLog select 1837,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,9,'Keep1','', getdate()
-insert into IOMergeLog select 1838,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,10,'DataDate','Apr 29 2019 12:00AM', getdate()
-insert into IOMergeLog select 1839,'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,11,'Name','', getdate()
-insert into IOMergeLog select 1840,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,1,'ID','L122797897', getdate()
-insert into IOMergeLog select 1841,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,2,'Flag','', getdate()
-insert into IOMergeLog select 1842,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,3,'IsFhips1','1', getdate()
-insert into IOMergeLog select 1843,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,4,'IsFhips2','1', getdate()
-insert into IOMergeLog select 1844,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,5,'IsFhips3','1', getdate()
-insert into IOMergeLog select 1845,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,6,'IsFhips4','1', getdate()
-insert into IOMergeLog select 1846,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,7,'IsFhips5','1', getdate()
-insert into IOMergeLog select 1847,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,8,'IsFhips6','1', getdate()
-insert into IOMergeLog select 1848,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,9,'Keep1','', getdate()
-insert into IOMergeLog select 1849,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,10,'DataDate','Apr 29 2019 12:00AM', getdate()
-insert into IOMergeLog select 1850,'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,11,'Name','', getdate()
+﻿insert into AppIOMergeLog(TableName, Source, RowNo, Pos, FieldName, Value, LogDate) 
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,1,'ID','L122797897', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,2,'Flag','', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,3,'IsFhips1','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,4,'IsFhips2','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,5,'IsFhips3','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,6,'IsFhips4','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,7,'IsFhips5','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,8,'IsFhips6','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,9,'Keep1','', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,10,'DataDate','Apr 29 2019 12:00AM', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_AMS',1,11,'Name','', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,1,'ID','L122797897', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,2,'Flag','', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,3,'IsFhips1','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,4,'IsFhips2','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,5,'IsFhips3','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,6,'IsFhips4','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,7,'IsFhips5','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,8,'IsFhips6','1', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,9,'Keep1','', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,10,'DataDate','Apr 29 2019 12:00AM', getdate() union all
+select 'TsbIDPropertiesFhipsMergeImp','TAMS_PF_AMS',2,11,'Name','', getdate()
