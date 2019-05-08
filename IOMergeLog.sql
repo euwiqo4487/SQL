@@ -1,5 +1,4 @@
-﻿USE TAMS_LOG
-GO
+﻿
 --檔案匯入匯出合併紀錄表
 if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[IOMergeLog]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
   drop table [dbo].[IOMergeLog]
